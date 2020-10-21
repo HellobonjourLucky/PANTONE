@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: rgb(55, 55, 55);
+}
+.blur{
+  opacity: 0.1;
+}
+a{
+  text-decoration: none;
+}
+.wrapper{
+    width:100%;
+    position:relative;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 100px 1fr 50px; */
+}
+
+/* title */
+.title{
+  text-align: center;
+  margin: 10px auto;
+}
+.title_img{
+  width: 1030px;
+  /* margin-left: -10px; */
+}
+/* Products */
+.products{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-left: -50px;
+    margin-bottom: 100px;
+}
+.products .grid-container {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    /* width:510px;
+    height:510px; */
+}
+.products .grid-item {
+    background-color: #ffffff;
+    width: 150px;
+    height: 200px;
+    transition: box-shadow 0.5s ease-out;
+    position: relative;
+}
+.products .grid-item:hover {
+    background-color: #f0dd86;
+    /* opacity: 70%; */
+    box-shadow: 10px 10px 16px -8px rgba(0,0,0,0.42);
+}
+
+.products .room_name{
+    position: absolute;
+    top:30%;
+    left: 20%;
+}
+.products img{
+    width:150px;
+    height: 150px;
+    padding: 10px;
+}
+
+
+/* pantone_name : pantone color discription */
+.pantone_name{
+  padding-left: 10px;
+  font-size: .8rem;
+  color: #000;
+}
+
+
+/* money_image : click function trigger this half-page */
+.money_image{
+    margin-top: 100px;
+    width:510px;
+    height:700px;
+    /* border:1px solid red; */
+    justify-content: center;
+    align-content: center;
+    /* background-color: #ffffff; */
+    box-shadow: -20px -20px 16px 8px rgba(0,0,0,0.42);
+}
+.money_image img{
+  width:500px;
+  height:690px;
+}
+.money_right{
+  float: right;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+}
+.money_left{
+  float:left;
+  position: absolute;
+  top: 12%;
+  right: 51%;
+}
+.d-none{
+  display: none;
+}
